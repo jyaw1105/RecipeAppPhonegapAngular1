@@ -1,0 +1,165 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-attachment:fixed;
+    font-family:'SketchFlow-Print', SketchFlow-Print;
+    font-size:12px;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+#home, #detail, #edit, #add{
+  z-index: 1;
+  width: 100%;
+  padding: 0;
+  overflow:hidden;
+}
+#content, textarea{
+  margin: 15px;
+}
+header{
+  width: 100%;
+  background-color: #FFF;
+  height: 50px;
+}
+header h1{
+    color: #B5651D;
+    padding:0;
+    position:absolute;
+    z-index:2;
+    display: inline-block;
+    font-size:20px;
+    text-align:left;
+    font-weight:bold;
+    line-height:45px;
+    top:10; left:75;
+    border-bottom: :1px solid #eee;
+    margin-top: 3px;
+}
+h3{
+  white-space: pre-wrap;
+  overflow: auto;
+  font-size: 20px;
+}
+#noRecipe{
+  text-align: center;
+}
+#searchContainer{
+  width: 100%;
+  position: relative;
+}
+
+.inputSearch{
+  margin: 5px;
+  width: 80%;
+}
+
+.btnSearch{
+  position:absolute;
+  top:0; right:0;
+}
+
+#btnEdit, #btnDone, .btnRightmost{
+    position:absolute;
+    top:0; right:0;
+    margin: 5px;
+}
+#btnAdd, #btnCancel, #btnReset,#btnDelete, .btnSecondRightmost{
+  position: absolute;
+  top:0;right: 0;
+  margin: 5px;
+  margin-right: 50px;
+  font-family: SketchFlow-Print;
+}
+
+#btnOk {
+    position: absolute;
+    bottom: 0;
+}
+
+#recipelist {
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 10px; margin-right: 10px;
+}
+
+.list {
+    display: block;
+    position: relative;
+    overflow: visible;
+    display: block;
+    text-decoration: none;
+    padding: .7em 1em;
+    color: #333;
+    font-size: 16px;
+    border: solid 1px #1f1f1f;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: SketchFlow-Print;
+}
+
+#recipelist p {
+    font-size: 14px;
+    text-align: right;
+}
+.imgBack{
+margin-top: 10px;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+#error{
+  font-size: 20px;
+  color: #F00;
+  text-align: center;
+}
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+#details{
+  font: 21px "SketchFlow-Print", SketchFlow-Print;
+  margin: 20px;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
